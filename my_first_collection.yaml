@@ -1,18 +1,18 @@
 type: collection.insomnia.rest/5.0
 schema_version: "5.1"
-name: My first collection
+name: Package Inventory
 meta:
   id: wrk_5c80d5e101ca47bbb275b24ae77924d7
   created: 1767427469386
-  modified: 1767427469386
+  modified: 1767427943267
   description: ""
 collection:
-  - url: https://dev-api.girimasindah.com/package-inventory/
+  - url: "{{base_url}}"
     name: Home
     meta:
       id: req_b7e9306080424a1a9eefbb5ff578152b
       created: 1767427469416
-      modified: 1767427480822
+      modified: 1767427992481
       isPrivate: false
       description: ""
       sortKey: -1767427469416
@@ -37,9 +37,12 @@ cookieJar:
     created: 1767427469414
     modified: 1767427469414
 environments:
-  name: Base Environment
+  name: DEV
   meta:
     id: env_c5148390aa1be7cbda19aedb27369dbc1e9949e0
     created: 1767427469413
-    modified: 1767427469413
+    modified: 1767427975374
     isPrivate: false
+  data:
+    base_url: https://dev-api.girimasindah.com/package-inventory
+    "": ""
